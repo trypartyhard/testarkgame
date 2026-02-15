@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Arkanoid Mini App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+    <div id="game-container">
+        <div id="score-panel">
+            <div id="score">Очки: 0</div>
+            <div id="lives">Жизни: ❤️❤️❤️</div>
+        </div>
+        <canvas id="gameCanvas"></canvas>
+        <div id="game-over" class="hidden">
+            <h2>Игра окончена!</h2>
+            <p>Ваш счёт: <span id="final-score">0</span></p>
+            <button id="restart-btn">Играть снова</button>
+        </div>
+        <div id="start-screen">
+            <h1>🎮 Arkanoid</h1>
+            <p>Отбивайте мяч и разбивайте кирпичи!</p>
+            <button id="start-btn">Начать игру</button>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
